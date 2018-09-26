@@ -32,7 +32,7 @@
         HELLO, <?php echo $_SESSION['username']; ?>
 
         <br /><br />
-        <a href="<?php echo base_url();?>index.php/auth/logout">Logout</a>
+        <a href="<?php echo base_url();?>auth/logout">Logout</a>
 
         <br /><br />
         <table>
