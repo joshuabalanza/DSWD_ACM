@@ -1,38 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DSWD | Registration</title>
-
-    <!-- Bootstrap -->
-    <link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<html>
+<head>  
+      <title>DSWD | Login</title>  
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />  
+      <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css">
   </head>
   <body>
     
-    <div class="col-lg-5 col-lg-offset-2">
-        <center>    
-            <h1>DSWD Access Control Module <br/> Registration</h1>
-        </center>
-        
-        <?php if(isset($_SESSION['success'])){?>
-            <div class="alert alert-success"> <?php echo $_SESSION['success'];?></div>   
-        <?php
-        }?>
+  <div class="container" id="loginkoto">
+        <center>
+        <form action="" method="POST"  class="formkoto2">
+            <label class="intro">DSWD</label>
+                <label class="intro2">Access Control Module | Registration</label>
+                <br />
+                <br />
+
+            <?php if(isset($_SESSION['success'])){?>
+                <div class="alert alert-success"> <?php echo $_SESSION['success'];?></div>   
+            <?php
+            }?>
+            <?php echo validation_errors('<div class="alert alert-danger">','</div>');?>
 
 
-        <?php echo validation_errors('<div class="alert alert-danger">','</div>');?>
-
-        <form action="" method="POST">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input class="form-control" name="username" id="username" type="text">
@@ -70,6 +59,7 @@
                 <button class="btn btn-primary" name="register">Register</button>
             </div>
         </form>
+        </center>
         
     </div>
 

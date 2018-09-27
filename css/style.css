@@ -1,0 +1,42 @@
+.formkoto{
+    align-content: center;
+    margin-top: 5%;
+}
+
+.formkoto2{
+    align-content: center;
+    /* margin-top: 1%;
+    margin-bottom: 50%; */
+}
+
+.formkoto2, input{
+    width: 500px;
+    height: 20px;
+}
+/* 
+.formkoto2, button{
+    width: 300px;
+} */
+
+.loginkoto {
+    align-content: center;
+    margin: 0 auto;
+}
+
+.formkoto, input{
+    width: 200px;
+    height: 20px;
+}
+
+.formkoto, button{
+    width: 300px;
+}
+
+.intro {
+    font-family: sans-serif;
+    font-size: 70px;
+}
+.intro2 {
+    font-family: sans-serif;
+    font-size: 21px;
+}
