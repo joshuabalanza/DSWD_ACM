@@ -12,13 +12,14 @@
     
     <!-- <div class="col-lg-5 col-lg-offset-2"> -->
     <div class="container" id="loginkoto">  
-        
+        <div class="title">
+            <center>
+               <label class="intro">DSWD</label><br />
+               <label class="intro2">Access Control Module</label>
+            </center>
+        </div>
         <center>
         <form action="" method="POST" class="formkoto" >
-        <label class="intro">DSWD</label>
-               <label class="intro2">Access Control Module</label>
-               <br />
-               <br />
 
             <!-- Message Alert -->
             <?php if(isset($_SESSION['success'])){?>

@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>  
-      <title>DSWD | Login</title>  
+      <title>DSWD | Registration</title>  
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />  
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css">
   </head>
   <body>
     
-  <div class="container" id="loginkoto">
+    
+    <div id="loginkoto">
+        
+            <div>
+                <center>
+                     <label class="introreg">DSWD</label> <br />
+                     <label class="intro2reg">Access Control Module | Registration</label>
+                </center>
+            </div>
+
         <center>
         <form action="" method="POST"  class="formkoto2">
-            <label class="intro">DSWD</label>
-                <label class="intro2">Access Control Module | Registration</label>
+           
                 <br />
                 <br />
 
@@ -56,16 +64,16 @@
             </div>
 
             <div class="text-center">
-                <button class="btn btn-primary" name="register">Register</button>
+                <button class="btn btn-info" name="register">Register</button>
+                <br />
+                <br />
+                <a href="<?php echo base_url(''); ?> ">Already have an Account?</a>
+                <br/>
+                <br/>
+                <br/>
             </div>
         </form>
         </center>
-        
-    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
   </body>
 </html>
