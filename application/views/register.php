@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>  
-      <title>DSWD | Registration</title>  
+      <title>DSWD_ACM | Registration</title>  
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />  
       <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>css/style.css">
   </head>
@@ -9,7 +9,7 @@
     
     
     <div id="loginkoto">
-        
+
             <div>
                 <center>
                      <label class="introreg">DSWD</label> <br />
