@@ -8,10 +8,16 @@
     <title>DSWD | Home</title>
 
     <!-- Bootstrap -->
-    <link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/bootstrap-theme.css" rel="stylesheet">
     <link href="<?php echo base_url() ?>assets/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="<?php echo base_url() ?>assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets/css/bootstrap.css" rel="stylesheet"> -->
+
+    <!-- Bootstrap 2 -->
+    <link href="<?php echo base_url() ?>assets2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets2/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets2/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="<?php echo base_url() ?>assets2/css/bootstrap.css" rel="stylesheet">
    
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -22,10 +28,22 @@
     <![endif]-->
   </head>
   <body>
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand"><h1 style="color:white;">DSWD ACCESS CONTROL MODULE</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto"></ul>
+    <form class="form-inline my-2 my-lg-0">
+    <a class="form-control mr-sm-2" style="font:bold;">Welcome! <?php echo $_SESSION['username']; ?></a>
+    <a class="btn btn-secondary my-2 my-sm-0" href="<?php echo base_url();?>auth/logout" role="button">Logout</a>
+    </form>
+  </div>
+</nav>
         
-        
-        
-        <h1>DSWD Access Control Module <br /> Welcome! <?php echo $_SESSION['username']; ?> </h1>
                 
                 <div class="alert alert-dismissible alert-success">
                 <?php if(isset($_SESSION['success'])){?>
@@ -63,13 +81,13 @@
                             </table>
                 <!-- END OF USER DATA -->
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="<?php echo base_url();?>auth/logout" role="button">Logout</a>
+                    
                 </p>
                 </center>
                 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url();?>assets2/js/bootstrap.min.js"></script>
   </body>
 </html>
