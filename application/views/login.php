@@ -44,6 +44,7 @@
                 <br />
                 <br />
                 <a href="<?php echo base_url('').'auth/register'; ?> ">Don't have an Account?</a>
+                <br /><br /><br />
             </div>
         </form>
         </center>
