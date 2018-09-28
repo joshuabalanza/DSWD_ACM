@@ -53,6 +53,7 @@ class Auth extends CI_Controller
     {
         if(isset($_POST['register']))
         {
+            $this->form_validation->set_rules('fullname', 'Fullname', 'required');
             $this->form_validation->set_rules('username', 'Username', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required');
             $this->form_validation->set_rules('password', 'Password', 'required|min_length[5]');
@@ -64,6 +65,7 @@ class Auth extends CI_Controller
                 echo 'form validated';
 
                 $data = array(
+                    'fullname' => $_POST['fullname'],
                     'username' => $_POST['username'],
                     'email' => $_POST['email'],
                     'password' => md5($_POST['password']),

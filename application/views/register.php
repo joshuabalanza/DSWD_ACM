@@ -31,6 +31,11 @@
 
 
             <div class="form-group">
+                <label for="fullname">Fullname:</label>
+                <input class="form-control" name="fullname" id="fullname" type="text">
+            </div>
+
+            <div class="form-group">
                 <label for="username">Username:</label>
                 <input class="form-control" name="username" id="username" type="text">
             </div>
